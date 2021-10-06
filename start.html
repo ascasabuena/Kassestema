@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>KASSESSTEMA</title>
+  <link rel="icon" type="image/png" href="logo2/kassesstema.png"/>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/styleForstart.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="background: url(logo2/CAbg.png); overflow-y: scroll;">
+
+
+<!-- ===================================================================================================== -->
+  <!-- start quiz -->
+
+  <div>
+   
+  <!-- button -->  
+  <div class="d-flex justify-content-center m-0 start_btn ">
+    <!-- <button type="button" class="btn btn-primary btn-lg m-1"><a class="btn-get-started">Start</a></button><br>
+    <button type="button" class="btn btn-primary btn-lg m-1"><a href="index.php" class="btn-get-started">Home</a></button> -->
+
+    <a class="btn-get-started"><button type="button" class="btn btn-success btn-lg m-1">Start</button></a><br>
+    <a href="index.php" class="btn-get-started"><button type="button" class="btn btn-success btn-lg m-1">Home</button></a>
+
+  </div>
+
+  <!-- info box -->
+  <div class="d-flex justify-content-center m-0 info_box" style="max-width: 500px;">
+    <div class="card bg-light mb-3" >
+      <div class="card-header">Career Assessment</div>
+      <div class="card-body">
+        <h5 class="card-title">Some reminders</h5>
+        <p class="card-text">REMEMBER CAREER ASSESSMENTS ARE JUST USED AS A GUIDANCE, YOU ARE STILL THE ONE WHO WILL DECIDE ON WHAT CAREER PATH YOU WILL TAKE. .</p>
+      </div>
+      <div class="buttons">
+        <button type="button" class="btn btn-success btn-sm quit">Exit</button>
+        <button type="button" class="btn btn-success btn-sm restart">Continue</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- quiz box -->
+  <div class="d-flex justify-content-center m-0 quiz_box" style="max-width: 350px;">
+    <div class="card bg-light mb-3">
+      <div class="card-header">Career Assessment</div>
+      <div class="card-body">
+        <section>
+          <h3>Would you like to...</h3>
+            <div class="que_text" style="max-width: 250px;">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+        
+        <footer>
+            <div class="total_que" style="visibility:hidden">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button id="buttonClick" type="button" class="btn btn-info btn-sm next_btn">Next</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!-- result -->
+ 
+ <div class="result_box card" style="background-color: black; border-color: black; max-width: 35%">
+      <div class="buttons">
+          <!-- <button type="button" class="btn btn-info btn-sm restart ">Take again</button>
+          <a href="resultTop.html"><button type="button" class="btn btn-info btn-sm ">View Results</button></a> -->
+        <a class="restart"><button type="button" class="btn btn-success btn-lg m-1 ">Take again</button></a><br>
+        <a href="resultTop.html"><button type="button" class="btn btn-success btn-lg m-1">View Results</button></a>
+  </div>
+  
+
+  
+
+<!-- =========================================================================================================== -->
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="questions.js"></script>
+  <script src="checker.js"></script>
+  <script src="descriptions.js"></script>
+  <script src="optionStatements.js"></script>
+  <script src="insertTop3Contents.js"></script>
+
+  <script type="text/javascript">
+    $('.collapse').on('shown.bs.collapse', function(e) {
+      var $card = $(this).closest('.card');
+      $('html,body').animate({
+        scrollTop: $card.offset().top - 50
+      }, 500);
+    });
+</script>
+</div>
+
+</body>
+
+</html>

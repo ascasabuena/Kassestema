@@ -1,3 +1,3 @@
 # Kassestema
-Web quiz template
+Web quiz application  
 run using 000webhost
